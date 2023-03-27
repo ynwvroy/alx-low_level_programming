@@ -24,10 +24,10 @@ int _atoi(char *s)
 		while (s[c] >= 48 && s[c] <= 57)
 		{
 			is1 = 1;
-			ni = (n1 * 10) + (s[c] - '0');
+			ni = (ni * 10) + (s[c] - '0');
 			c++;
 		}
-		if ( isi == 1)
+		if ( is1 == 1)
 		{
 			break;
 		}
