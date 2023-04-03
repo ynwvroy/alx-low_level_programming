@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
+ * _strchr - Input point
+ * @s: entry
+ * @c: entry
  * Return: Always 0 (Success)
  */
 
