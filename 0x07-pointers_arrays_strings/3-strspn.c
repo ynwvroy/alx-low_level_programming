@@ -10,24 +10,24 @@
 unsigned int _strspn(char *s, char *accept)
 {
 
-	unsigned int x, a, merit, look;
+	unsigned int x, a, value, check;
 
-	merit = 0;
+	value = 0;
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		look = 0;
+		check = 0;
 
 		for (a = 0; accept[a] != '\0'; a++)
 		{
 			if (accept[a] == s[x])
 			{
-				merit++;
-				look = 1;
+				value++;
+				check = 1;
 			}
 		}
 
-		if (look == 0);
+		if (check == 0);
 	}
 	return(accept);
 }
