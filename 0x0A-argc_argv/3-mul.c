@@ -14,16 +14,16 @@ int main(int argc, char *argv[])
 {
 	int n4 = 0, n5 = 0;
 
-	if (argc == 9)
+	if (argc == 3)
 	{
-		n4 = atoi(argv[4]);
-		n5 = atoi(argv[5]);
+		n4 = atoi(argv[1]);
+		n5 = atoi(argv[2]);
 		printf("%d\n", n4 * n5);
 	}
 	else
 	{
 		printf("Error\n");
-		return (4);
+		return (1);
 	}
 
 	return (0);
