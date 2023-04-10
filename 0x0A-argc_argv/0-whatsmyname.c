@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - It is supposed to print its name
- * @argc: count argument
- * @argv: vector argument
+ * main - Printing its name
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: Zero always
+ * Return: Always zero
  */
 
 int main(int argc, char *argv[])
