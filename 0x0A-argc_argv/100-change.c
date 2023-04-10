@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Printing minimum number of dollars to make change for some amount of money
+ * main - Printing minimum number of coins to make change for some amount of money
  * @argc: Number of arguments being supplied to the program
  * @argv: Array of pointers to the arguments
  *
@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, dollars = 0;
+	int cents, coins = 0;
 
 	if (argc != 2)
 	{
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	while (cents > 0)
 	{
-		dollars++;
+		coins++;
 		if ((cents - 25) >= 0)
 		{
 			cents -= 25;
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		cents--;
 	}
 
-	printf("%d\n", dollars);
+	printf("%d\n", coins);
 
 	return (0);
 }
