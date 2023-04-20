@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	int x = 0;
-	char *o, *v = "";
+	char *str, *sep = "";
 
 	va_list list;
 
@@ -23,25 +23,25 @@ void print_all(const char * const format, ...)
 			switch (format[x])
 			{
 				case 'c':
-					printf("%s%c", v, va_arg(list, int));
+					printf("%s%c", sep, va_arg(list, int));
 					break;
 				case 'i':
-					printf("%s%d", v, va_arg(list, int));
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", v, va_arg(list, double));
+					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 's':
-					o = va_arg(list, char *);
-					if (!o)
-						o = "(nil)";
-					printf("%s%s", v, o);
+					str = va_arg(list, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s%s", sep, str);
 					break;
 				default:
 					x++;
 					continue;
 			}
-			v = ",";
+			sep = ",";
 			x++;
 		}
 	}
