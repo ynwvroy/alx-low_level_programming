@@ -1,24 +1,21 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
  * print_all - Printing anything
- * @format: The list of types of arguments that is passed to the function
+ * @format: The list of types of arguments that's passed to the function
  */
 
 void print_all(const char * const format, ...)
 {
 	va_list argm;
-
 	unsigned int i;
 	char *o;
 	char *v;
 
 	i = 0;
-
 	v = "";
-
 	va_start(argm, format);
 
 	if (format)
@@ -50,7 +47,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
 	printf("\n");
 	va_end(argm);
 }
