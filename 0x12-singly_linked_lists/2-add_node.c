@@ -20,14 +20,14 @@ list_t *add_node(list_t *head, const char *str)
 	}
 
 	O = malloc(sizeof(list_t));
-	if (!o)
+	if (!O)
 	{
 		return (NULL);
 	}
 
 	O->str = strdup(str);
 	O->len = len;
-	o->next = (*head);
+	O->next = (*head);
 	(*head) = O;
 
 	return (*head);
