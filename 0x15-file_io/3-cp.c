@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
 
-char 8create_buffer(char *file);
+char *create_buffer(char *file);
 void close_file(int f1);
 
 /**
